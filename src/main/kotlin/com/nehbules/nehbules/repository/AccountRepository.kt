@@ -7,4 +7,5 @@ import java.util.*
 
 @Repository
 interface AccountRepository: MongoRepository<Account, UUID> {
+    fun findAccountByLogin(login: String): Account
 }
