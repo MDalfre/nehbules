@@ -6,6 +6,7 @@ import com.nehbules.nehbules.model.PlayerCharacter
 import java.util.*
 
 data class PlayerCharacterRequest(
+    val accountId: UUID,
     val name: String,
     val className: String,
     val raceName: String,
